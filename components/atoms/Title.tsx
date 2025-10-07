@@ -5,6 +5,7 @@ interface TitleProps {
   text: string;
   bold?: boolean;
   align?: 'left' | 'center' | 'right';
+  alignMobile?: 'left' | 'center' | 'right';
   className?: string;
 }
 
@@ -12,6 +13,7 @@ const Title: React.FC<TitleProps> = ({
   text, 
   bold = true, 
   align = 'left',
+  alignMobile = 'center',
   className = ''
 }) => {
   const alignmentClasses = {
@@ -22,7 +24,7 @@ const Title: React.FC<TitleProps> = ({
 
   return (
     <h2 
-      className={`text-xl md:text-4xl lg:text-6xl whitespace-pre-line ${bold ? 'font-semibold' : 'font-normal'} ${alignmentClasses[align]} ${className}`}
+      className={`text-xl md:text-4xl lg:text-6xl whitespace-pre-line ${bold ? 'font-semibold' : 'font-medium'} md:${alignmentClasses[align]} ${className} ${alignmentClasses[alignMobile]}`}
     >
       {text}
     </h2>
