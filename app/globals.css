@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+  --background: 255 255 255; /* white */
+  --foreground: 15 18 25;   /* near-black */
+  --muted: 245 247 250;     /* light gray */
+  --accent: 220 38 38;      /* red-600 */
+}
+
+/* tokens → tailwind via utilities */
+.bg-background{ background-color: rgb(var(--background)); }
+.text-foreground{ color: rgb(var(--foreground)); }
+.bg-muted{ background-color: rgb(var(--muted)); }
+.text-muted{ color: rgb(100 116 139); }
+.text-accent{ color: rgb(var(--accent)); }
+.bg-accent{ background-color: rgb(var(--accent)); }
+
+.container-narrow{ @apply max-w-6xl mx-auto px-4 sm:px-6; }
+.section-pad{ @apply py-14 sm:py-20; }
+.card{ @apply rounded-2xl border border-black/5 bg-white shadow-sm; }
+
+/* gradient hero */
+.hero-gradient{
+  background: radial-gradient(120% 120% at 80% 0%, rgba(0,0,0,.75) 0%, rgba(0,0,0,.6) 30%, transparent 60%),
+              radial-gradient(120% 120% at 0% 20%, rgba(220,38,38,.4) 0%, transparent 55%),
+              linear-gradient(180deg, #fff 0%, #fff 40%, #f8f8f8 100%);
+}
