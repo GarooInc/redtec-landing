@@ -23,7 +23,7 @@ const page = () => {
     <main className="min-h-screen ">
 
       {/* Hero Section 1 */}
-      <section className="lg:h-screen xl:px-20 md:px-10 sm:px-8 px-5 rounded-xl">
+      <section className="xl:px-20 md:px-10 sm:px-8 px-5 rounded-xl">
         <Header />
         <div className=' xl:pt-20 md:pt-16 pt-10 rounded-2xl p-10' style={{ background: "url('assets/images/bg/fondo.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <HeroSection
@@ -51,7 +51,7 @@ const page = () => {
         </div>
 
         {/* Logos partners*/}
-        <div className="py-10 bg-white">
+        {/* <div className="py-10 bg-white">
           <PartnersSection
             description='As Seen On leaders and best-in-class brands'
             logos={[
@@ -59,7 +59,7 @@ const page = () => {
             { src: "/assets/images/logos/logo1.png", alt: "Logo 2" },
             { src: "/assets/images/logos/logo1.png", alt: "Logo 3" },
           ]} />
-        </div>
+        </div> */}
       </section>
 
       {/* Hero Section 2 */}
@@ -403,7 +403,7 @@ const page = () => {
       </section>
 
       {/* Logos partners*/}
-      <section className="relative xl:px-40 md:px-20 sm:px-10 px-5 md:py-10 mt-10 w-full">
+      {/* <section className="relative xl:px-40 md:px-20 sm:px-10 px-5 md:py-10 mt-10 w-full">
       <div className="py-10 bg-white flex flex-col">
         <HeaderSection
           title="Trusted by Industry Leaders"
@@ -419,7 +419,7 @@ const page = () => {
           { src: "/assets/images/logos/logo1.png", alt: "Logo 3" },
         ]} />
       </div>
-      </section>
+      </section> */}
       {/* Footer */}
       <Footer />
 
