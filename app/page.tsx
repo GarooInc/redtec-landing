@@ -38,10 +38,10 @@ const page = () => {
           disableShift={true}
           buttons={
             <>
-              <Button variant="primary" size="md">
+              <Button variant="primary" size="md" href="mailto:hello@redtec.ai">
                 Get Started
               </Button>
-              <Button variant="outline" size="md" className='text-white'>
+              <Button variant="outline" size="md" className='text-white' href="mailto:hello@redtec.ai">
                 Watch Demo
               </Button>
             </>
@@ -72,7 +72,7 @@ const page = () => {
             `At RedTec, we build intelligent agents and automation 
             tools that transform how businesses operate. 
 
-            Our technology makes AI truly actionable — helping 
+            Our technology makes AI truly actionable helping 
             you move from reactive to proactive, and from 
             complex to simple.
 
@@ -88,7 +88,7 @@ const page = () => {
           imageWidth='80%'
           buttons={
             <>
-              <Button variant="secondary" size="md">
+              <Button variant="secondary" size="md" href="mailto:hello@redtec.ai">
                  Explore our agents
               </Button>
             </>
@@ -104,7 +104,7 @@ const page = () => {
             title="Every business is different."
             subtitle="That’s why we offer tailor-made AI solutions for teams with specific challenges, workflows, or visions. 
             Whether you're automating internal operations, building a vertical AI product, or integrating AI into legacy 
-            systems — we work with you to design, develop, and deploy agents that match your exact needs."
+            systems we work with you to design, develop, and deploy agents that match your exact needs."
             align='center'
             titleBold={false}
             subtitleBold={false}
@@ -130,7 +130,7 @@ const page = () => {
           imageWidth='80%'
           buttons={
             <>
-              <Button variant="outline" size="md">
+              <Button variant="outline" size="md" href="mailto:hello@redtec.ai">
                  Explore our agents
               </Button>
             </>
@@ -158,7 +158,7 @@ const page = () => {
           imageWidth='80%'
           buttons={
             <>
-              <Button variant="outline" size="md">
+              <Button variant="outline" size="md" href="mailto:hello@redtec.ai">
                  Talk to an expert
               </Button>
             </>
@@ -187,7 +187,7 @@ const page = () => {
           imageWidth='80%'
           buttons={
             <>
-              <Button variant="outline" size="md">
+              <Button variant="outline" size="md" href="mailto:hello@redtec.ai">
                  Schedule a Demo
               </Button>
             </>
@@ -215,7 +215,7 @@ const page = () => {
           imageWidth='80%'
           buttons={
             <>
-              <Button variant="outline" size="md">
+              <Button variant="outline" size="md" href="mailto:hello@redtec.ai">
                  Explore Our Agents
               </Button>
             </>
@@ -236,7 +236,7 @@ const page = () => {
             titleBold={false}
             buttons={
               <>
-                <Button variant="secondary" size="md">
+                <Button variant="secondary" size="md" href="mailto:hello@redtec.ai">
                   Request Custom Solution
                 </Button>
               </>
@@ -251,7 +251,7 @@ const page = () => {
         <HeaderSection
           title="Our AI Agents Are Ready for Work"
           color='white'
-          subtitle={`Custom-built and pre-configured agents to automate, analyze, and act — for teams that want to work smarter, not harder.`}
+          subtitle={`Custom-built and pre-configured agents to automate, analyze, and act for teams that want to work smarter, not harder.`}
           align='center'
           titleBold={false}
         />
@@ -315,6 +315,7 @@ const page = () => {
             variant="secondary"
             size="md"
             className='w-full'
+            href="mailto:hello@redtec.ai"
           >
             Schedule a Demo
           </Button>
@@ -322,6 +323,7 @@ const page = () => {
             variant="outline"
             size="md"
             className='w-full'
+            href="mailto:hello@redtec.ai"
           >
             Get Started
           </Button>
@@ -336,7 +338,7 @@ const page = () => {
           <div className="relative rounded-3xl overflow-hidden bg-base-200 aspect-[4/3] lg:aspect-auto md:min-h-[420px] lg:min-h-[520px]">
             <img
               src="/assets/images/sections/s10_banner_img.png"
-              alt="RedTec — people smiling"
+              alt="RedTec people smiling"
               className="object-cover w-full h-full"
             />
           </div>
@@ -348,9 +350,9 @@ const page = () => {
 
             {/* Encabezado y primer párrafo usando HeaderSection */}
             <HeaderSection
-              title={"We’re Not Just Building AI — We’re Transforming Lives."}
+              title={"We’re Not Just Building AI, We’re Transforming Lives."}
               subtitle={
-                `RedTec was born from a belief that AI should empower people — not replace them. We create tools that improve decision‑making, simplify operations, and allow teams to do more of what matters.
+                `RedTec was born from a belief that AI should empower people not replace them. We create tools that improve decision‑making, simplify operations, and allow teams to do more of what matters.
                 
                 We work with purpose, share our success, and strive to leave a legacy that goes beyond technology.
                 `
@@ -366,7 +368,7 @@ const page = () => {
             {/* Quote box */}
             <div className="mt-8 rounded-2xl border border-black/10 bg-neutral-50 p-6">
               <p className="text-neutral-700">
-                We may not know exactly what the future looks like — but we intend to help write it.
+                We may not know exactly what the future looks like but we intend to help write it.
               </p>
             </div>
 
@@ -392,10 +394,10 @@ const page = () => {
             subtitleBold={false}
           />
           <div className='flex justify-center mt-6'>
-            <Button variant="primary" size="md">
+            <Button variant="primary" size="md" href="mailto:hello@redtec.ai">
               Schedule a Demo
             </Button>
-            <Button variant="outline" size="md" className='text-white ml-4'>
+            <Button variant="outline" size="md" className='text-white ml-4' href="mailto:hello@redtec.ai">
               Get Started
             </Button>
           </div>

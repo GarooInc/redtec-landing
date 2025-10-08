@@ -65,15 +65,21 @@ const Footer: React.FC = () => {
                     <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                     <div className="flex items-center gap-4">
                     {/* LinkedIn */}
-                    <a href="#" aria-label="LinkedIn" className="h-10 w-10 rounded-full border border-neutral-200 grid place-items-center hover:bg-neutral-100">
+                    <a href="https://www.linkedin.com/company/redtecai" aria-label="LinkedIn" className="h-10 w-10 rounded-full border border-neutral-200 grid place-items-center hover:bg-neutral-100">
                         <img src="assets/images/icons/li_icon.png" alt="LinkedIn" className=" w-5" />
                     </a>
+
+                    {/* Instagram */}
+                    <a href="https://www.instagram.com/redtec.ai/" aria-label="Instagram" className="h-10 w-10 rounded-full border border-neutral-200 grid place-items-center hover:bg-neutral-100">
+                        <img src="assets/images/icons/ig_icon.png" alt="Instagram" className=" w-5" />
+                    </a>
+
                     {/* WhatsApp */}
                     <a href="#" aria-label="WhatsApp" className="h-10 w-10 rounded-full border border-neutral-200 grid place-items-center hover:bg-neutral-100">
                         <img src="assets/images/icons/wha_icon.png" alt="WhatsApp" className="w-5" />
                     </a>
                     {/* Email */}
-                    <a href="#" aria-label="Email" className="h-10 w-10 rounded-full border border-neutral-200 grid place-items-center hover:bg-neutral-100">
+                    <a href="mailto:hello@redtec.ai" aria-label="Email" className="h-10 w-10 rounded-full border border-neutral-200 grid place-items-center hover:bg-neutral-100">
                         <img src="assets/images/icons/mail_icon.png" alt="Email" className="w-5" />
                     </a>
                     </div>

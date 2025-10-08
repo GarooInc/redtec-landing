@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
                     <NavLink variant="secondary" href="#industries">Industries We Serve</NavLink>
                     <NavLink variant="secondary" href="#pricing">Trusted by</NavLink>
             </nav>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" href="mailto:hello@redtec.ai">
                 Schedule a Demo
             </Button>
         </div>
