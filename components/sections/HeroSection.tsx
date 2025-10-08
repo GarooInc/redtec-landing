@@ -7,6 +7,7 @@ import HeaderSection from '../organisms/HeaderSection';
 
 interface HeroSectionProps {
   title: string;
+  color?: string;
   subtitle?: string;
   description?: string;
   titleBold?: boolean;
@@ -24,6 +25,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   title,
+  color,
   subtitle,
   description,
   titleBold = true,
@@ -41,10 +43,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   const contentOrder = imagePosition === 'left' ? 'lg:order-2' : 'lg:order-1';
   const imageOrder = imagePosition === 'left' ? 'lg:order-1' : 'lg:order-2';
 
-  const shiftClass = disableShift ? 'translate-x-0' : (imagePosition === 'right' ? 'translate-x-4 md:translate-x-0' : '-translate-x-4 md:translate-x-0');
-  const imageClass = imageWidth
-    ? `md:w-[${imageWidth}] w-full h-auto rounded-lg transform ${shiftClass} ${imagePosition === 'left' ? 'md:p-0 pr-6' : 'md:p-0 pl-6'}`
-    : `w-full h-auto rounded-lg transform ${shiftClass}`;
+  const shiftClass = disableShift ? '' : (imagePosition === 'right' ? 'translate-x-12 md:translate-x-0' : 'translate-x-2 md:translate-x-0');
+  const imageClass = `h-auto rounded-lg ${shiftClass}`;
+  const imageContainerClass = '';
 
   const alignmentClasses = {
     left: 'md:text-left',
@@ -115,10 +116,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   };
 
   return (
-    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${className}`}>
+    <div className={`grid grid-cols-1 gap-8 lg:gap-12 items-center ${className} ${imageUrl ? 'lg:grid-cols-2' : ''}`}>
       {imageUrl && (
         <motion.div 
-          className={`${imageOrder}`}
+          className={`${imageOrder} ${imageContainerClass}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -128,6 +129,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             src={imageUrl}
             alt={title}
             className={imageClass}
+            style={imageWidth ? { width: imageWidth, maxWidth: '100%', display: 'block' } : { width: '100%' }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />
@@ -145,6 +147,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <motion.div variants={childVariants}>
           <HeaderSection
             title={title}
+            color={color}
             subtitle={subtitle}
             titleBold={titleBold}
             subtitleBold={subtitleBold}
@@ -156,7 +159,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {description && (
           <motion.p 
-            className={`text-base md:text-lg text-gray-600  ${alignmentClasses[align]} ${alignmentMobileClasses[alignMobile]} ${alignMobile === 'center' ? '' : 'whitespace-pre-line'}`}
+            className={`text-base md:text-lg ${color ? `text-${color}` : 'text-gray-600'} ${alignmentClasses[align]} ${alignmentMobileClasses[alignMobile]} ${alignMobile === 'center' ? '' : 'whitespace-pre-line'}`}
             variants={childVariants}
           >
             {description}

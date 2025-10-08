@@ -1,8 +1,9 @@
 import Title from '../atoms/Title';
-import Subtitle from '../atoms/SubtitleBlock';
+import Subtitle from '../atoms/Subtitle';
 
 interface HeaderSectionProps {
   title: string;
+  color?: string;
   subtitle?: string;
   titleBold?: boolean;
   subtitleBold?: boolean;
@@ -14,6 +15,7 @@ interface HeaderSectionProps {
 
 const HeaderSection: React.FC<HeaderSectionProps> = ({
   title,
+  color,
   subtitle,
   titleBold = true,
   subtitleBold = false,
@@ -30,9 +32,9 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({
 
   return (
     <div className={`${spacingClasses[spacing]} ${className}`}>
-      <Title text={title} bold={titleBold} align={align} alignMobile={alignMobile} />
+      <Title text={title} bold={titleBold} align={align} alignMobile={alignMobile} className={color ? `text-${color}` : ''} />
       {subtitle && (
-        <Subtitle text={subtitle} bold={subtitleBold} align={align} alignMobile={alignMobile} className="text-gray-600" />
+        <Subtitle text={subtitle} bold={subtitleBold} align={align} alignMobile={alignMobile} className={color ? `text-${color}` : ''} />
       )}
     </div>
   );

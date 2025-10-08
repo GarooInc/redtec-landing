@@ -5,16 +5,16 @@ import { Button } from '../atoms/Button';
 
 export const Header: React.FC = () => {
     return (
-    <header className="sticky top-0 z-40 w-full">
+    <header className="sticky top-0 z-40 w-full bg-white">
         <div className="w-full h-24 flex items-center justify-between">
             <MainLogo />
             <nav className="hidden md:flex items-center gap-1">
-                    <NavLink variant="primary" href="#how">What We Do</NavLink>
-                    <NavLink variant="primary" href="#features">Our Products</NavLink>
-                    <NavLink variant="primary" href="#industries">Industries We Serve</NavLink>
-                    <NavLink variant="primary" href="#pricing">Trusted by</NavLink>
+                    <NavLink variant="secondary" href="#how">What We Do</NavLink>
+                    <NavLink variant="secondary" href="#features">Our Products</NavLink>
+                    <NavLink variant="secondary" href="#industries">Industries We Serve</NavLink>
+                    <NavLink variant="secondary" href="#pricing">Trusted by</NavLink>
             </nav>
-            <Button variant="primary" size="sm">
+            <Button variant="outline" size="sm">
                 Schedule a Demo
             </Button>
         </div>

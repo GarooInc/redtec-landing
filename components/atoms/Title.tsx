@@ -24,7 +24,7 @@ const Title: React.FC<TitleProps> = ({
 
   return (
     <h2 
-      className={`text-xl md:text-4xl lg:text-6xl whitespace-pre-line ${bold ? 'font-semibold' : 'font-medium'} md:${alignmentClasses[align]} ${className} ${alignmentClasses[alignMobile]}`}
+      className={`text-xl md:text-4xl lg:text-5xl whitespace-pre-line ${bold ? 'font-semibold' : 'font-medium'} md:${alignmentClasses[align]} ${className} ${alignmentClasses[alignMobile]}`}
     >
       {text}
     </h2>
