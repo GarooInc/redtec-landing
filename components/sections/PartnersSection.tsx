@@ -18,7 +18,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ logos, title, descrip
   return (
     <div className="overflow-hidden">
         {title && <Title text={title} bold={true} align="center" className="mb-4" />}
-        <p className='text-center text-gray-500 mb-12 text-sm'>{description}</p>
+        <p className='text-center text-gray-500 mb-6 text-sm'>{description}</p>
         
         <div className="relative">
           {/* Gradientes en los bordes para efecto de fade */}

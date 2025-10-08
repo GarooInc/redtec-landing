@@ -17,13 +17,13 @@ const ImgSquare = ({ img, alt, icon, title, description }: ImgSquareProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ scale: 1.04, boxShadow: '0 0 25px rgba(255,255,255,0.1)' }}
-      className="relative w-full h-80 lg:h-full bg-base-200 rounded-4xl overflow-hidden flex items-center justify-center"
+      className="relative w-full md:h-80  lg:h-full bg-base-200 rounded-4xl overflow-hidden flex items-center justify-center"
     >
       {img ? (
         <motion.img
           src={img}
           alt={alt || 'Image'}
-          className="w-full h-full md:object-contain select-none"
+          className="w-full h-full object-contain select-none"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 160, damping: 20 }}
         />

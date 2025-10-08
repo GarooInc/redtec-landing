@@ -3,8 +3,8 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { Button } from '@/components/atoms/Button';
 import PartnersSection from '@/components/sections/PartnersSection';
 import HeaderSection from '@/components/organisms/HeaderSection';
-import { u } from 'motion/react-client';
 import Accordion from '@/components/organisms/Accordion';
+import Footer from '@/components/organisms/Footer';
 
 
 import { TiStarOutline } from "react-icons/ti";
@@ -23,7 +23,7 @@ const page = () => {
     <main className="min-h-screen ">
 
       {/* Hero Section 1 */}
-      <section className="h-screen xl:px-20 md:px-10 sm:px-8 px-5 rounded-xl">
+      <section className="lg:h-screen xl:px-20 md:px-10 sm:px-8 px-5 rounded-xl">
         <Header />
         <div className=' xl:pt-20 md:pt-16 pt-10 rounded-2xl p-10' style={{ background: "url('assets/images/bg/fondo.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <HeroSection
@@ -226,7 +226,7 @@ const page = () => {
       </section> 
 
       {/* Hero Section 4 */}
-      <section className="relative xl:px-40 md:px-20 sm:px-10 xl:py-16 md:py-12 p-10 w-full">
+      <section className="relative xl:px-40 md:px-20 sm:px-10 xl:py-16 p-12 w-full">
             <span className="text-center block text-xs md:text-sm lg:text-base mb-2 text-[#CC1D1A]">
               Request a custom solution today and unlock what AI can do for your organization.
             </span>
@@ -420,6 +420,8 @@ const page = () => {
         ]} />
       </div>
       </section>
+      {/* Footer */}
+      <Footer />
 
 
     </main>

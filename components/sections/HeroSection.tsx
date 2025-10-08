@@ -116,7 +116,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   };
 
   return (
-    <div className={`grid grid-cols-1 gap-8 lg:gap-12 items-center ${className} ${imageUrl ? 'lg:grid-cols-2' : ''}`}>
+    <div className={`grid grid-cols-1 gap-8 lg:gap-12 items-center ${className} ${imageUrl ? 'md:grid-cols-2' : ''}`}>
       {imageUrl && (
         <motion.div 
           className={`${imageOrder} ${imageContainerClass}`}
@@ -159,7 +159,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {description && (
           <motion.p 
-            className={`text-base md:text-lg ${color ? `text-${color}` : 'text-gray-600'} ${alignmentClasses[align]} ${alignmentMobileClasses[alignMobile]} ${alignMobile === 'center' ? '' : 'whitespace-pre-line'}`}
+            className={`text-sm md:text-lg ${color ? `text-${color}` : 'text-gray-600'} ${alignmentClasses[align]} ${alignmentMobileClasses[alignMobile]} ${alignMobile === 'center' ? '' : 'whitespace-pre-line'}`}
             variants={childVariants}
           >
             {description}

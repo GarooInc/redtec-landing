@@ -21,7 +21,7 @@ const Subtitle: React.FC<SubtitleProps> = ({
 
   return (
     <p 
-      className={`text-xs md:text-sm lg:text-lg whitespace-pre-line ${bold ? 'font-semibold' : 'font-normal'}  md:${alignmentClasses[align]} ${className} ${alignmentClasses[alignMobile]}`}
+      className={`text-sm lg:text-lg whitespace-pre-line ${bold ? 'font-semibold' : 'font-normal'}  md:${alignmentClasses[align]} ${className} ${alignmentClasses[alignMobile]}`}
     >
       {text}
     </p>
